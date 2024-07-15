@@ -14,7 +14,7 @@ function Home() {
 
 
   const loadData = async () => {
-    let responce = await fetch("http://localhost:5000/api/fooddata", {
+    let responce = await fetch("https://foodixpress-backend.onrender.com/api/fooddata", {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
