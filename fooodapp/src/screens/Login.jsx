@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(JSON.stringify({email: credentials.email, password: credentials.password}))
-    const responce = await fetch('http://localhost:5000/api/loginuser', {
+    const responce = await fetch('https://foodixpress-backend.onrender.com/api/loginuser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
