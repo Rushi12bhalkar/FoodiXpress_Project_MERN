@@ -19,7 +19,7 @@ export default function Cart() {
 
   const handleCheckout = async()=>{
     let userEmail = localStorage.getItem("userEmail");
-    let responce = await fetch("http://localhost:5000/api/orderdata",{
+    let responce = await fetch("https://foodixpress-backend.onrender.com/api/orderdata",{
        
       method:'POST',
       headers: {
